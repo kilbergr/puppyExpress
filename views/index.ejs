@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+</head>
+<body>
+	<h1>ALL THE PUPPIES</h1>
+			<% puppiesArr.forEach(function(puppy){ %>
+				<h3>No <%=puppy.id%></h3> 
+				<p><%=puppy.puppyName%> is <%=puppy.puppyAge%> 	</p>
+				<p><a href="/puppies/<%=puppy.id%>">Look up <%=puppy.puppyName%></a>
+				<%}) %>
+		
+</body>
+</html>
